@@ -1,0 +1,110 @@
+#beneficios small {
+    color: #30a082;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#beneficios h2 {
+    color: #334441;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+
+#beneficios p {
+    color: #334441;
+    font-size: 18px;
+    width: 60%;
+}
+
+#beneficios article {
+    display: flex;
+    flex-direction: column;
+}
+
+#beneficios article .cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+#beneficios article .cards .card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 200px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    margin: 0 10px;
+}
+
+#beneficios article .cards .card .wrapper-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cef7ec;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#beneficios article .cards .card p {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #334441;
+}
+
+#beneficios article .cards .card h4 {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #334441;
+    text-decoration: none;
+    position: relative;
+}
+
+#beneficios article .cards .card h4:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    bottom: -15px;
+
+
+    /****** 
+   optional values below 
+   ******/
+
+    /* center - (optional) use with adjusting width   */
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 20%;
+    background: red;
+
+    /* optional animation */
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+@media(max-width: 1000px) {
+    #beneficios p {
+        width: 100%;
+    }
+
+    #beneficios article .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #beneficios article .cards .card {
+        width: 70%;
+
+        margin: 10px 0;
+    }
+}
